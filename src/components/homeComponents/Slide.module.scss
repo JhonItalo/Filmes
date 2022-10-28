@@ -1,0 +1,61 @@
+.carrosel {
+    width: calc(100vw - 50px);
+    box-sizing: content-box !important;
+    display: flex;
+    overflow-x: auto !important;
+    scroll-behavior: smooth;
+    margin-bottom: 40px;
+}
+.carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrosel_img {
+    width: 250px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: 0.1s;
+    transform: scale(0.95);
+    flex: none;
+}
+.carrosel_img:hover {
+    transform: scale(1);
+}
+
+.button_esquerda {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 42px;
+    font-size: 35px;
+    transform: rotate(180deg);
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+}
+.button_direita {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 42px;
+    font-size: 35px;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    position: absolute;
+    top: 35px;
+    right: 18px;
+    z-index: 10;
+}
+.activeBtn {
+    display: flex;
+}
+.button_direita:hover,
+.button_esquerda:hover {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}

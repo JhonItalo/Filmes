@@ -1,0 +1,26 @@
+.navigation {
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 18px;
+    //border: 2px solid palegreen;s
+    align-items: center;
+
+    li {
+        font-size: 15px;
+
+        .activeBold {
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: inherit;
+        }
+    }
+}

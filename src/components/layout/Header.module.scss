@@ -1,0 +1,49 @@
+.header {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(rgba(10, 10, 10, 0.7) 50%, transparent);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    transition: all ease 0.3s;
+    top: 0;
+    z-index: 10;
+    padding-left: 3rem;
+   
+   
+    .capsula_Logo_Navigation_Flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 33px;
+        height: 100%;
+        .logo{
+            font-size: 2rem;
+            text-decoration: none;
+            display: inline-flex;
+            color: red;
+        }
+    }
+    .busca_e_icons {
+        opacity: 0.9;
+        display: flex;
+        gap: 30px;
+        font-size: 20px;
+        margin-right: 70px;
+       
+        align-items: center;
+        color: white;
+
+        .user {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+           
+            align-items: center;
+        }
+    }
+}
+.activescrolly {
+    background-color: #151515;
+}

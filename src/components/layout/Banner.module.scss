@@ -1,0 +1,43 @@
+.banner {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .gradiente_banner {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 1%, transparent 99%);
+        position: relative;
+
+        .conteudo_banner_series {
+            margin-left: 50px;
+            position: absolute;
+            top: 20%;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+
+            h3 {
+                font-size: 40px;
+                color: white;
+            }
+            .select {
+                font-size: 15px;
+                padding: 5px 15px 5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 120px;
+                height: 25px;
+                background-color: black;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+}
